@@ -1,0 +1,33 @@
+<div class="creation-container">
+
+	<div class="creation-header-container step-done">
+		<span>Informations</span>
+	</div>
+
+	<div class="creation-header-container" ng-class="{'step-not-done': step == 1, 'step-done': step >= 2}">
+		<span>Ingrédients</span>
+	</div>
+
+	<div class="creation-header-container" style="width: 34%" ng-class="{'step-not-done': step != 3, 'step-done': step == 3}">
+		<span>Recette</span>
+	</div>
+
+	<div class="clear"></div>
+
+
+	<div>
+		<div ng-include="'partials/creationStep1.html'" ng-if="step == 1"></div>
+
+		<div ng-include="'partials/creationStep2.html'" ng-if="step == 2"></div>
+
+		<div ng-include="'partials/creationStep3.html'" ng-if="step == 3"></div>
+	</div>
+
+</div>
+
+<div style="float: right; margin-top: 20px">
+	<p style="float: left; margin-right: 20px" class="error">{{error}}</p>
+	<button ng-click="goToPreviousStep()" ng-show="step > 1">Précédent</button>
+	<button ng-click="goToNextSetp()" ng-show="step < 3">Suivant</button>
+	<button ng-click="validate()" ng-show="step == 3">Valider</button>
+</div>

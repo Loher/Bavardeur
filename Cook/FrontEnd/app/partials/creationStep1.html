@@ -1,0 +1,36 @@
+<div style="width: 500px; text-align: right; margin: 20px">
+
+	<!-- Titre -->
+	<div style="padding: 20px">
+		<label>Titre de la recette</label> <input type="text" ng-model="recipe.title" style="margin-left: 10px; width: 220px">
+	</div>
+
+	<!-- Difficulté -->
+	<div style="padding: 20px">
+		<label>Difficulté</label> <input type="text" ng-model="recipe.difficulty" style="margin-left: 10px; width: 220px">
+	</div>
+
+	<!-- Temps -->
+	<div style="padding: 20px">
+		<label>Temps de préparation</label> <input type="text" ng-model="recipe.time" style="margin-left: 10px; width: 220px">
+	</div>
+
+	<!-- Type -->
+	<div style="padding: 20px">
+		<label>Type</label> 
+		<select ng-model="recipe.type" ng-options="type.code as type.label for type in types" style="width: 220px; margin-left: 10px"></select>
+	</div>
+
+	<!-- Nombre de personnes -->
+	<div style="padding: 20px">
+		<label>Nombre de personnes</label> <input type="number" ng-model="recipe.nbOfPersons" style="margin-left: 10px; width: 220px">
+	</div>
+
+	<!-- Photos -->
+	<div style="padding: 20px">
+		<input ng-model="file.value[0].name" style="float: right; width: 220px" disabled>
+		<div style="width: 130px; height: 20px; text-align: center; float: right; margin-right: 15px" class="button" ngf-select ng-model="file.value">Choisir une photo</div> 
+	</div>
+
+	
+</div>

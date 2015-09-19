@@ -1,0 +1,17 @@
+<div style="width: 100%; text-align: center; margin: 20px">
+
+	<div ng-repeat="step in recipe.steps" style="padding: 20px; float: left; width: 45%">
+		<span style="vertical-align: top">Etape {{$index+1}} </span>
+		<textarea ng-model="step.description" type="text" style="margin-left: 10px; width: 350px; height: 100px; resize: none"> </textarea>
+		<img src="images/cross.png" class="cross-icon" ng-click="removeStep(step)" style="vertical-align: top">
+	</div>
+
+</div>
+
+<div class="clear"></div>
+
+<div style="float: right; margin: 20px">
+	<button ng-click="addStep()">Ajouter une étape</button>
+</div>
+
+<div class="clear"></div>

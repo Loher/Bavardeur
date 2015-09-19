@@ -1,0 +1,23 @@
+<div>
+	
+	<div style="margin-top: 20px; margin-left: 30px">
+		<label>J'ai faim et je veux </label>
+		<select ng-options="item for item in iwant" ng-model="recipeType" ng-change="changeRecipeType()"></select>
+	</div>
+
+	<div ng-repeat="recipe in receipts" class="recipe-small-container" ng-click="openRecipe(recipe)">
+		<div style="float: left">
+			<img class="image-small" ng-src="images/{{recipe.image}}">
+		</div>
+
+		<div style="float: left; margin-left: 20px">
+			<h3 class="recipe-small-title">{{recipe.title}}</h3>
+			<p>{{getRecipeType(recipe.type)}}</p>
+			<p style="font-style: italic">Recette de {{recipe.cook.name}}</p>
+		</div>
+		
+		<div class="clear"></div>
+		
+	</div>
+
+</div>

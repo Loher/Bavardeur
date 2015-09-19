@@ -1,0 +1,26 @@
+<div>
+
+	<div style="float: left; margin-right: 50px; width: 15%">
+		<div style="text-align: center; margin-top: 20px; border-right: 2px solid #000000; height: 500px">			
+			<img class="image-small cook-image" ng-src="images/{{cook.picture}}">
+			<h3 class="recipe-small-title" style="margin-bottom: 0px">{{cook.name}}</h3>
+			<p style="font-size: 12px; font-style: italic; margin-top: 0px">{{cook.receipts.length}} recettes</p>
+		</div>
+	</div>
+
+	<div style="float: left; width: 80%">
+			<div ng-repeat="recipe in cook.receipts" class="recipe-small-container" ng-click="openRecipe(recipe)">
+		<div style="float: left">
+			<img class="image-small" ng-src="images/{{recipe.image}}">
+		</div>
+
+		<div style="float: left; margin-left: 20px">
+			<h3 class="recipe-small-title" style="width: 250px">{{recipe.title}}</h3>
+			<p>{{getRecipeType(recipe.type)}}</p>
+		</div>
+		
+		<div class="clear"></div>
+		
+	</div>
+	</div>
+</div>

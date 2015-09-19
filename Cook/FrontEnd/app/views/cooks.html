@@ -1,0 +1,11 @@
+<div>
+	
+	<div ng-repeat="cook in cooks" ng-click="openDetails(cook)" class="cook-small-container">
+		<div style="text-align: center">
+			<img class="image-small cook-image" ng-src="images/{{cook.picture}}">
+			<h3 class="recipe-small-title" style="margin-bottom: 0px">{{cook.name}}</h3>
+			<p style="font-size: 12px; font-style: italic; margin-top: 0px">{{cook.nbOfReceipts}} recettes</p>
+		</div>
+	</div>
+
+</div>

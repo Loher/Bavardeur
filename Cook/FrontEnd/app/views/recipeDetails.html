@@ -1,0 +1,35 @@
+<div>
+
+	<h2 style="margin-bottom:0px">{{recipe.title}}</h2>
+	<p style="font-style: italic; margin-top:0px" class="hover-cursor" ng-click="openCookDetails()">par {{recipe.cook.name}}</p>
+	<div>
+
+		<div style="float: left">
+			<img class="image-large" ng-src="images/{{recipe.image}}">
+		</div>
+
+		<div style="float: right" class="ingredient-container">
+			<div>
+				<p style="font-size: 20px; font-style: normal; font-weight: bold; padding-left: 20px; float: left; margin-bottom: 0px">Ingrédients</p>
+				<p style="font-style: normal; margin-right: 10px;float: right; margin-bottom: 0px">{{recipe.time}} - {{recipe.nbOfPersons}} personnes</p>
+			</div>
+
+			<div class="clear"></div>
+
+			
+			<ul>
+				<li ng-repeat="ingredient in recipe.ingredients">{{ingredient}}</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="clear"></div>
+
+	<div style="margin-top: 30px">
+		<p style="font-size: 20px; font-style: normal; font-weight: bold;">Recette</p>
+		<div ng-repeat="step in recipe.steps" style="margin-top: 10px">
+			{{$index+1}}) {{step}}
+		</div>
+	</div>
+
+</div>

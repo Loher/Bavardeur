@@ -1,0 +1,186 @@
+/* app css stylesheet */
+
+body{
+  background: #C4D7ED;
+}
+
+.clear{
+  clear: both;
+}
+
+button{
+  background: #000000;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  border-radius: 10px;
+  min-width: 100px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.button{
+  background: #000000;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  border-radius: 10px;
+  min-width: 100px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+button:hover{
+  cursor: pointer;
+  color: #C4D7ED;
+}
+
+.button:hover{
+  cursor: pointer;
+  color: #C4D7ED;
+}
+
+.error{
+  color: #FF0000;
+  font-weight: bold;
+}
+
+.cross-icon{
+  width: 15px;
+  height: 15px;
+}
+
+.cross-icon:hover{
+  cursor: pointer;
+}
+
+.main-div{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-container{
+  background: #000000;
+  width: 100%;
+  height: 35px;
+  padding-top: 10px;
+  padding-left: 20px
+}
+
+.menu-item{
+  float: left;
+  font-size: 20px;
+  font-family: "courrier";
+  margin-right: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.menu-item:hover{
+  cursor: pointer;
+  color: #C4D7ED;
+}
+
+.image-small{
+  width: 150px;
+}
+
+.image-large{
+  width: 575px;
+}
+
+.recipe-small-title{
+  margin-top: 0px;
+}
+
+.recipe-small-container{
+  box-shadow: 15px 15px 9px -6px;
+  margin-top: 30px;
+  padding: 10px;
+  border: 1px solid #000000;
+  float: left;
+  width: 44%;
+  height: 118px;
+  margin-left: 30px;
+}
+
+.cook-small-container{
+  box-shadow: 15px 15px 9px -6px;
+  margin-top: 30px;
+  padding: 10px;
+  border: 1px solid #000000;
+  float: left;
+  width: 15%;
+  margin-right: 15px;
+  margin-left: 15px;
+  height: 200px;
+}
+
+.recipe-small-container:hover{
+  cursor: pointer;
+  background: #B3C6DC;
+}
+
+.cook-small-container:hover{
+  cursor: pointer;
+  background: #B3C6DC;
+}
+
+.cook-image{
+  border-radius: 75px;
+}
+
+.ingredient-container{
+  width: 49%;
+  box-shadow: 15px 15px 9px -6px;
+  border: 1px solid #000000;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.hover-cursor:hover{
+  cursor: pointer;
+}
+
+.connexion-container{
+  box-shadow: 15px 15px 9px -6px;
+  border: 1px solid #000000;
+  width: 300px;
+  height: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 20px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.creation-container{
+  border: 1px solid #000000;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.creation-header-container{
+  width: 33%;
+  height: 30px;
+  font-weight: bold;
+  float: left;
+  padding-top: 10px;
+  text-align: center;
+  border-bottom: 1px solid #000000;
+}
+
+.step-done{
+  background: #000000;
+  color: #FFFFFF;
+}
+
+.step-not-done{
+  background: #C4D7ED;
+  color: #000000;
+}

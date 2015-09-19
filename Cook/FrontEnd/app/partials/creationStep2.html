@@ -1,0 +1,17 @@
+<div style="width: 100%; text-align: center; margin: 20px">
+
+	<div ng-repeat="ingredient in recipe.ingredients" style="padding: 20px; float: left; width: 45%">
+		<span>Ingrédient {{$index+1}} </span>
+		<input ng-model="ingredient.ingredient" type="text" style="margin-left: 10px; width: 220px"> 
+		<img src="images/cross.png" class="cross-icon" ng-click="removeIngredient(ingredient)">
+	</div>
+
+</div>
+
+<div class="clear"></div>
+
+<div style="float: right; margin: 20px">
+	<button ng-click="addIngredient()">Ajouter un ingrédient</button>
+</div>
+
+<div class="clear"></div>
